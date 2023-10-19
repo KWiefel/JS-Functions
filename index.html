@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions-Level-1</title>
+
+    <style>
+      .class1 {
+        font-family: sans-serif;
+        font-size: 20px;
+        color: red;
+      }
+
+      .class2 {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 40px;
+        color: blue;
+      }
+
+      .class3 {
+        text-decoration: underline;
+      }
+
+      .superballs {
+        display: flex;
+        gap: 5%;
+      }
+
+      .superball {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid black;
+      }
+
+      .color1 {
+        background-image: linear-gradient(90deg, red, blue);
+        color: white;
+      }
+
+      .color2 {
+        background-image: linear-gradient(90deg, green, yellow);
+        color: white;
+      }
+
+      .color3 {
+        background-image: linear-gradient(90deg, purple, brown);
+        color: white;
+      }
+
+      .color4 {
+        background-image: linear-gradient(90deg, orange, black);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <form onsubmit="return false">
+      <input type="number" placeholder="beliebige Zahl" />
+      <button onclick="double()">Klick mich!</button>
+      <p></p>
+    </form>
+
+    <form class="form2" onsubmit="return false">
+      <label for="birthyear">Gib dein Geburtsjahr ein:</label>
+      <input type="number" name="birthyear" placeholder="dein Geburtsjahr" />
+      <button onclick="calculate()">Berechnen</button>
+      <p></p>
+    </form>
+
+    <form class="form3" onsubmit="return false">
+      <input type="number" placeholder="Nummer-1" />
+      <input type="number" placeholder="Nummer-2" />
+      <button onclick="compare()">Vergleichen</button>
+      <p></p>
+    </form>
+
+    <div class="classlist">
+      <h1 id="headline">Meine Bucketlist</h1>
+      <ul id="list">
+        <li>Die gesamte Welt bereisen</li>
+        <li>Programmieren lernen</li>
+        <li>Die Welt ein bischen besser machen</li>
+      </ul>
+      <button onclick="changeHeadline()">Headline Stylen</button>
+      <button onclick="resetHeadline()">Headline zurücksetzten</button>
+    </div>
+
+    <div class="superballs__wrapper">
+      <h1>CHANGE BACKGROUND & TEXT-COLOR</h1>
+      <div class="superballs">
+        <div onclick="change1()" class="superball color1"></div>
+        <div onclick="change2()" class="superball color2"></div>
+        <div onclick="change3()" class="superball color3"></div>
+        <div onclick="change4()" class="superball color4"></div>
+      </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
